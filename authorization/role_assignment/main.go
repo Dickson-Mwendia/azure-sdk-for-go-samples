@@ -47,6 +47,8 @@ func main() {
 	log.Println("resources group:", *resourceGroup.ID)
 	scope = *resourceGroup.ID
 
+	scope = *resourceGroup.ID
+
 	roleAssignment, err := createRoleAssignment(ctx, cred)
 	if err != nil {
 		log.Fatal(err)
